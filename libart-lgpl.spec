@@ -152,7 +152,7 @@ especially suitable for embedded applications.
 
 %build
 unset QTDIR QTINC QTLIB
-export PATH="%{tde_bindir}:${PATH}"
+#export PATH="%{tde_bindir}:${PATH}" #!!!WARN TO BACK!
 
 if ! rpm -E %%cmake|grep -e 'cd build\|cd ${CMAKE_BUILD_DIR:-build}'; then
   mkdir -p build

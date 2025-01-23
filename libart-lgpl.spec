@@ -154,10 +154,15 @@ especially suitable for embedded applications.
 %build
 unset QTDIR QTINC QTLIB
 
-if ! rpm -E %%cmake|grep -e 'cd build\|cd ${CMAKE_BUILD_DIR:-build}'; then
+#было:
+#if ! rpm -E %%cmake|grep -e 'cd build\|cd ${CMAKE_BUILD_DIR:-build}'; then
+#  mkdir -p build
+#  cd build
+#fi
+#стало:
   mkdir -p build
   cd build
-fi
+
 
 %{suse_cmake} \
   -DCMAKE_BUILD_TYPE="RelWithDebInfo" \

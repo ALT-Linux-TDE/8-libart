@@ -27,6 +27,8 @@ BuildRequires(pre): rpm-macros-suse-compat
 %define tde_version 14.1.3
 %endif
 
+%define libart %{_lib}art
+
 Name:		tde-libart-lgpl
 Version:	14.1.3
 Release:	alt1

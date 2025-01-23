@@ -160,9 +160,6 @@ unset QTDIR QTINC QTLIB
 #  cd build
 #fi
 #стало:
-  mkdir -p build
-  cd build
-
 
 %{suse_cmake} \
   -DCMAKE_BUILD_TYPE="RelWithDebInfo" \

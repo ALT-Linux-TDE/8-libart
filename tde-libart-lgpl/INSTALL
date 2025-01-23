@@ -1,0 +1,11 @@
+Basic Installation
+==================
+
+libart-lgpl relies on cmake to build.
+
+Here are suggested default options:
+
+ -DCMAKE_SKIP_RPATH="OFF" \
+ -DCMAKE_VERBOSE_MAKEFILE="ON" \
+ -DCMAKE_BUILD_TYPE=RelWithDebInfo \
+ -DWITH_ALL_OPTIONS="ON"

@@ -1,0 +1,48 @@
+
+ libart-lgpl - a 2D graphics library
+
+
+Libart-lgpl is a library of functions for 2D graphics supporting a
+superset of the PostScript imaging model, designed to be integrated with
+graphics, artwork and illustration programs.
+It is written in optimized C and is fully compatible with C++.
+With a small footprint of 10,000 lines of code, it is especially suitable
+for embedded applications.
+
+
+
+======================================================================
+
+NOTE: The TDE project has taken over maintenance of this library,
+starting with the sources from the final upstream release v2.3.21.
+
+This allows the TDE project to resolve remaining issues that cause
+problems or crashes within TDE.
+
+This patched library is only available under the terms of the
+GPL/LGPL, and is NOT for sale by the original author as mentioned
+above, as patch copyright has NOT been transferred to the original
+author and we have no plans to do so.
+
+======================================================================
+
+
+For more information about libart, see the web page:
+
+   http://www.levien.com/libart/
+
+There's also a libart tutorial available at
+http://www.gnome.org/~mathieu/libart/libart.html
+
+
+
+CONTRIBUTING
+==============
+
+If you wish to contribute to libart-lgpl, you might do so:
+
+- TDE Gitea Workspace (TGW) collaboration tool.
+  https://mirror.git.trinitydesktop.org/gitea
+
+- TDE Weblate Translation Workspace (TWTW) collaboration tool.
+  https://mirror.git.trinitydesktop.org/weblate

@@ -154,10 +154,10 @@ especially suitable for embedded applications.
 unset QTDIR QTINC QTLIB
 #export PATH="%{tde_bindir}:${PATH}" #!!!WARN TO BACK!
 
-if ! rpm -E %%cmake|grep -e 'cd build\|cd ${CMAKE_BUILD_DIR:-build}'; then
-  mkdir -p build
+#if ! rpm -E %%cmake|grep -e 'cd build\|cd ${CMAKE_BUILD_DIR:-build}'; then
+#  mkdir -p build
   cd build
-fi
+#fi
 
 %{suse_cmake} \
   -DCMAKE_BUILD_TYPE="RelWithDebInfo" \

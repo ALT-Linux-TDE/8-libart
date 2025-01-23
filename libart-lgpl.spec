@@ -43,6 +43,7 @@ License:	LGPL-2.0+
 
 Source0:		tde-libart-lgpl.tar.gz
 
+BuildRequires: tde-rpm-macros
 BuildRequires:	tde-cmake
 BuildRequires:	gcc-c++
 BuildRequires:	libtool
@@ -152,12 +153,11 @@ especially suitable for embedded applications.
 
 %build
 unset QTDIR QTINC QTLIB
-#export PATH="%{tde_bindir}:${PATH}" #!!!WARN TO BACK!
 
-#if ! rpm -E %%cmake|grep -e 'cd build\|cd ${CMAKE_BUILD_DIR:-build}'; then
+if ! rpm -E %%cmake|grep -e 'cd build\|cd ${CMAKE_BUILD_DIR:-build}'; then
   mkdir -p build
   cd build
-#fi
+fi
 
 %{suse_cmake} \
   -DCMAKE_BUILD_TYPE="RelWithDebInfo" \

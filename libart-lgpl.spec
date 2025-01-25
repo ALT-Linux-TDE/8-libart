@@ -29,6 +29,8 @@ BuildRequires(pre): rpm-macros-suse-compat
 
 %define libart %{_lib}art
 
+%{?optflags_lto:%global optflags_lto %optflags_lto -ffat-lto-objects}
+
 Name:		tde-libart-lgpl
 Version:	14.1.3
 Release:	alt1
